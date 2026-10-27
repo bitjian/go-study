@@ -1,0 +1,21 @@
+# ---- Go 编译产物 ----
+# go build 生成的是无扩展名可执行文件（如 hello-world / for / value / var），
+# 这里忽略所有无扩展名的文件，保留目录和有扩展名的文件。
+*
+!*/
+!*.*
+
+# 需要提交的无扩展名/点文件例外
+!.gitignore
+!LICENSE
+!Makefile
+!Dockerfile
+
+# 测试二进制与覆盖率输出
+*.test
+*.out
+
+# ---- 系统与编辑器 ----
+.DS_Store
+.idea/
+.vscode/
